@@ -16,10 +16,6 @@ class RegisterMembershipController(
 
     @PostMapping("/register")
     fun registerMembership(@RequestBody request: RegisterMembershipRequest): Membership {
-        // request ~~
-
-        // UseCase
-
         return RegisterMembershipCommand(
             name = request.name,
             email = request.email,
