@@ -1,7 +1,7 @@
 package com.example.membership.adapter.out.persistence
 
-import jakarta.annotation.Generated
 import jakarta.persistence.Entity
+import jakarta.persistence.GeneratedValue
 import jakarta.persistence.Id
 import jakarta.persistence.Table
 
@@ -9,17 +9,16 @@ import jakarta.persistence.Table
 @Table(name = "membership")
 data class MembershipJpaEntity(
 
-    private val name: String,
+    val name: String,
 
-    private val email: String,
+    val email: String,
 
-    private val address: String,
+    val address: String,
 
-    private val isValid: Boolean,
+    val isValid: Boolean,
 
-    private val isCorp: Boolean,
+    val isCorp: Boolean,
 
     @Id
-    @Generated
-    private val membershipId: Long = 0L,
+    @GeneratedValue val membershipId: Long = 0L,
 )
