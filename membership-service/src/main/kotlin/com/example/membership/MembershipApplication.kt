@@ -1,11 +1,11 @@
-package com.example.msa
+package com.example.membership
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class KotlinMsaExampleApplication
+class MembershipApplication
 
 fun main(args: Array<String>) {
-    runApplication<KotlinMsaExampleApplication>(*args)
+    runApplication<MembershipApplication>(*args)
 }
